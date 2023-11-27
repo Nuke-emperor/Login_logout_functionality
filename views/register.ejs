@@ -1,17 +1,48 @@
-<h1>you are in the registration page</h1>
-<h1>Register</h1>
+<%- include('partials/navbar') %>
 
-<form action="register" method="post">
-<div>
-    <input type="text" placeholder="name" name="name">
 
-</div>
-<div class="">
-    <input type="email"placeholder="email" name="email">
-</div>
-<div class="">
-    <input type="password" placeholder="password" name="password">
-</div>
-<button type="submit">Register</button>
-<a href="login">Login</a>
-</form>
+
+<section>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6 mx-auto">
+               <div class="card">
+                <div class="card-header">
+                    <h4>REGISTER ACCOUNT</h4>
+                </div>
+                <div class="card-body">
+
+                    <form action="register" method="post">
+                        <div class="form-group">
+                            <input class="form-control mt-2" type="text" placeholder="name" name="name">
+                            
+                    </div>
+                    <div class="">
+                        <input class="form-control mt-2" type="email" placeholder="email" name="email">
+                    </div>
+                    <div class="">
+                        <input class="form-control mt-2" type="password" placeholder="password" name="password">
+                    </div>
+                    <button class="btn btn-primary btn-block mt-2" type="submit">Register</button>
+                </form>
+            </div>
+
+
+               </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+

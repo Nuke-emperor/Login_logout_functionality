@@ -1,4 +1,92 @@
-<h1>we are here</h1>
-<form action="/logout?_method=DELETE" method="post" >
-    <BUTton>LOGOUT</BUTton>
-</form>
+
+   
+    <%- include('partials/navbar') %>
+    <body>
+        
+        <!-- SEARCH -->
+        <section id="search" class="py-4 mb-4 bg-light">
+            <div class="ml-5 ">
+                <form action="/logout?_method=DELETE" method="post" >
+                    <button class="btn btn-outline-secondary">LOGOUT</button>
+                </form>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Users...">
+                            <div class="input-group-append">
+                                <button class="btn btn-warning">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- USERS -->
+        <section id="users">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Recent Students</h4>
+                            </div>
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>John Doe</td>
+                                        <td>jdoe@gmail.com</td>
+                                        <td>
+                                            <a href="#" class="btn btn-secondary">
+                                                <i class="fas fa-angle-double-right"></i> Details
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Harry White</td>
+                                        <td>harry@yahoo.com</td>
+                                        <td>
+                                            <a href="#" class="btn btn-secondary">
+                                                <i class="fas fa-angle-double-right"></i> Details
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Mary Johnson</td>
+                                        <td>mary@gmail.com</td>
+                                        <td>
+                                            <a href="#" class="btn btn-secondary">
+                                                <i class="fas fa-angle-double-right"></i> Details
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       
+
+
+
+
+
+</body>
+
+</html>

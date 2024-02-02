@@ -32,8 +32,8 @@ app.use(passport.session())
 
 const users = []
 
-app.get('/', checkAuthenticatedUser, (req, res) => {
-    res.render('home')
+app.get('/', checkAuthenticatedUser, (req, res,) => {
+    res.render('home', { users: req.user.id})
 })
     
 
@@ -56,9 +56,10 @@ app.get('/register', checkNotAuthenticatedUser, (req, res) => {
 app.post('/login', checkNotAuthenticatedUser, passport.authenticate('local', {
     successRedirect: '/',
     failureRedirect: '/login',
-    failureFlash:true
+    failureFlash: true
+
         
-    }) )
+    }) ) 
 
     app.post('/register', checkNotAuthenticatedUser, async(req, res) => {
         try {
@@ -90,9 +91,9 @@ app.post('/login', checkNotAuthenticatedUser, passport.authenticate('local', {
      next()
 }
 
-
-app.listen(3000,
-console.log('[+]server started.....')
+const port =3000
+app.listen(port,
+console.log('[+]server started.....',port)
 
 
 )

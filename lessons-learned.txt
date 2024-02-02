@@ -1,0 +1,6 @@
+if you are going to send an object to the home file viewing
+you must make sure to object in the form of this
+
+{name: req.user.name}
+
+
